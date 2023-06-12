@@ -68,8 +68,6 @@ function scrollToTop() {
   });
 }
 
-// Add this JavaScript code to your existing script or create a new one
-
 const slider = document.getElementById("slider");
 const prevButton = document.getElementById("prev-button");
 const nextButton = document.getElementById("next-button");
@@ -104,23 +102,19 @@ function prevImage() {
   showImage(currentIndex);
 }
 
-// Automatically change slide every 2 seconds
+
 const slideshowInterval = setInterval(nextImage, 2000);
-
-// Apply smooth ease-in transition
 slider.style.transition = "opacity 0.5s ease-in-out, transform 0.5s ease-in-out";
-
-// Show the initial slide
 showImage(currentIndex);
 
-// Add event listeners to the buttons
+
 prevButton.addEventListener("click", () => {
-  clearInterval(slideshowInterval); // Stop the automatic slideshow
+  clearInterval(slideshowInterval); 
   prevImage();
 });
 
 nextButton.addEventListener("click", () => {
-  clearInterval(slideshowInterval); // Stop the automatic slideshow
+  clearInterval(slideshowInterval); 
   nextImage();
 });
 
@@ -137,3 +131,18 @@ function fadeInOnScroll() {
 }
 
 window.addEventListener('scroll', fadeInOnScroll);
+
+window.addEventListener('DOMContentLoaded', function() {
+  const fadeElements = document.querySelectorAll('.fade-in-element');
+  
+  fadeElements.forEach(function(element) {
+    element.style.opacity = '0';
+    element.style.transition = 'opacity 1s ease-in';
+  });
+  
+  setTimeout(function() {
+    fadeElements.forEach(function(element) {
+      element.style.opacity = '1';
+    });
+  }, 100);
+});
