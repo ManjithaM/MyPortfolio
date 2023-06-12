@@ -71,7 +71,7 @@ nav ul li a {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  z-index: 1; /* Ensure button is on top of other elements */
+  z-index: 1; 
 }
 
 .sidebar nav ul {
