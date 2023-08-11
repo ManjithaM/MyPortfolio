@@ -270,6 +270,19 @@ textarea {
   height: 150px;
 }
 
+#email {
+  width: 100%;
+  padding: 10px;
+  border:#333;
+  border-radius: 5px;
+  background-color: rgba(243, 250, 203, 0.637);
+}
+
+#email:focus {
+  outline: none;
+  border-color: #333;
+}
+
 button[type="submit"] {
   padding: 10px 20px;
   border: none;
