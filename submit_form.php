@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $message = $_POST["message"];
     
-    // Validate and sanitize name
+    
     if (empty($name)) {
         $nameErr = "Name is required";
     } else {
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
     
-    // Validate and sanitize email
+    
     if (empty($email)) {
         $emailErr = "Email is required";
     } else {
@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
     
-    // Sanitize message
+    
     if (empty($message)) {
         $messageErr = "Message is required";
     } else {
