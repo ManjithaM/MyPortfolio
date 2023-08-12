@@ -52,15 +52,15 @@ nav ul li a {
 .sidebar {
   position: fixed;
   top: 0;
-  left: -200px; /* Initially hidden */
+  left: -200px; 
   width: 200px;
   height: 100vh;
   background-color: #f2f2f2;
-  transition: left 0.3s ease-in-out; /* Add transition effect */
+  transition: left 0.3s ease-in-out; 
 }
 
 .sidebar.active {
-  left: 0; /* Visible when active */
+  left: 0; 
 }
 
 .toggle-button {
